@@ -15,6 +15,10 @@ const counter = (state = 0, action) => {
 }
 
 // React Component
+// First argument into this is props. The props argument 
+// is destructured using is ES6's Destructuring Assigment 
+// feature to make consuming the properties on props easier.
+// http://es6-features.org/#ParameterContextMatching
 const Counter = ({ value, onIncrement, onDecrement }) => (
   <div>
     <h1>{value}</h1>
